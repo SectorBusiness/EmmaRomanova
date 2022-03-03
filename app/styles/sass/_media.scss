@@ -1,0 +1,41 @@
+@mixin bigDesctop {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin desctop {
+  @media screen and (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin ipad-mini {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
