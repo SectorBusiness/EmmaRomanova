@@ -3,7 +3,7 @@
 // $blue: #37577c;
 $white: #fff;
 $black: #524433;
-$yellow: #F6A223;
+$yellow: #f6a223;
 
 // $orange: #f7931e;
 * {
@@ -86,21 +86,13 @@ button {
     }
   }
 }
-// .title {
-//   &-up {
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 42.98px;
-//     text-align: center;
-//   }
-//   &-bottom {
-//     margin: auto;
-//     line-height: 17.07px;
-//     margin-top: 20px;
-//     text-align: center;
-//     max-width: 526px;
-//     a {
-//       color: $red;
-//     }
-//   }
-// }
+.title {
+  h2 {
+    font-size: 36px;
+    font-weight: 400;
+    span {
+      font-size: 36px;
+      font-weight: 700;
+    }
+  }
+}
