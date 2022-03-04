@@ -86,13 +86,28 @@ button {
 }
 .title {
   h2 {
-    font-family: 'Source Serif Pro', serif;
+    font-family: "Source Serif Pro", serif;
     font-size: 36px;
     font-weight: 400;
     span {
-      font-family: 'Source Serif Pro', serif;
+      font-family: "Source Serif Pro", serif;
       font-size: 36px;
       font-weight: 700;
     }
+  }
+}
+.input {
+  background: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  height: 59px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &::placeholder {
+    color: rgba(88, 88, 88, 0.57);
   }
 }
