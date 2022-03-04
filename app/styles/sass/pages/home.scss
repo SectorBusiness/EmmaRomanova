@@ -381,30 +381,30 @@
     margin-bottom: 30px;
     font-weight: 500;
   }
-  .sochial {
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: center;
-    p {
-      text-align: right;
-      margin-right: 15px;
-      font-weight: 700;
-      font-size: 14px;
+}
+.sochial {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+  p {
+    text-align: right;
+    margin-right: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.7px;
+    span {
       line-height: 19.7px;
-      span {
-        line-height: 19.7px;
 
-        font-size: 14px;
-        font-weight: 700;
-        color: $yellow;
-      }
+      font-size: 14px;
+      font-weight: 700;
+      color: $yellow;
     }
-    img {
-      object-fit: contain;
-      margin-left: 20px;
-    }
+  }
+  img {
+    object-fit: contain;
+    margin-left: 20px;
   }
 }
 
@@ -478,4 +478,27 @@
 .photogallery {
   display: flex;
   justify-content: space-between;
+  &__content {
+    margin-top: 65px;
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    &-wrapper {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
