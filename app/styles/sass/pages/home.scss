@@ -9,8 +9,7 @@
   }
   &__descp {
     position: relative;
-    h1 {
-    }
+
     button {
       margin-top: 130px;
     }
@@ -264,8 +263,6 @@
         max-width: 276px;
         margin-right: 30px;
       }
-      img {
-      }
     }
   }
 }
@@ -397,7 +394,7 @@
       font-size: 14px;
       line-height: 19.7px;
       span {
-      line-height: 19.7px;
+        line-height: 19.7px;
 
         font-size: 14px;
         font-weight: 700;
@@ -416,6 +413,7 @@
     padding-bottom: 200px;
   }
   &__event {
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
   }
@@ -426,6 +424,7 @@
     }
   }
   &-descp {
+    margin-top: 10px;
     margin-right: 20px;
     display: flex;
     justify-content: space-between;
@@ -446,6 +445,31 @@
         font-size: 14px;
         font-weight: 500;
         margin-bottom: 19px;
+      }
+    }
+  }
+  &__serv {
+    &-title {
+      margin-bottom: 30px;
+    }
+    margin-top: 40px;
+    &-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &-item {
+      display: flex;
+      max-width: 310px;
+      margin-bottom: 40px;
+      h5 {
+        font-weight: 700;
+        font-size: 14px;
+        margin-bottom: 7px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 400;
       }
     }
   }

@@ -469,12 +469,7 @@
                     >Время проведения</label
                   >
                   <span class="bar"><span class="fill"></span></span>
-                  <input
-                    type="range"
-                    class="slider"
-                    value="10"
-                    id="slider"
-                  />
+                  <input type="range" class="slider" value="10" id="slider" />
                 </div>
                 <div class="calculate-descp">
                   <p>1 час</p>
@@ -484,7 +479,50 @@
                   <p>5 и больше часов</p>
                 </div>
               </div>
-              <div class="calculate__serv"></div>
+              <div class="calculate__serv">
+                <h5 class="calculate__serv-title">Дополнительные услуги</h5>
+                <div class="calculate__serv-items">
+                  <div class="calculate__serv-item checkbox">
+                    <label class="custom-checkbox" for="servCalk1">
+                      <input name="servCalk" id="servCalk1" type="checkbox" />
+                      <span>
+                        <div>
+                          <h5>Украшение зала</h5>
+                          <p>
+                            (дизайнер по работе с материалом, шарами, живыми и
+                            декоративными цветами)
+                          </p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="calculate__serv-item checkbox">
+                    <label class="custom-checkbox" for="servCalk2">
+                      <input name="servCalk" id="servCalk2" type="checkbox" />
+                      <span>
+                        <div>
+                          <h5>Дискотека</h5>
+                          <p>(дополнительный час дискотеки)</p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="calculate__serv-item checkbox">
+                    <label class="custom-checkbox" for="servCalk3">
+                      <input name="servCalk" id="servCalk3" type="checkbox" />
+                      <span>
+                        <div>
+                          <h5>Украшение зала</h5>
+                          <p>
+                            (дизайнер по работе с материалом, шарами, живыми и
+                            декоративными цветами)
+                          </p>
+                        </div>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-4"></div>
@@ -496,7 +534,7 @@
       <div class="continer"></div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/calculate.js"></script>
+    <script src="js/jq.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
