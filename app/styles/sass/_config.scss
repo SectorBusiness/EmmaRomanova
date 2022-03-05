@@ -2,6 +2,7 @@
 $white: #fff;
 $black: #524433;
 $yellow: #f6a223;
+$purple: #D7B1E0;
 
 // $orange: #f7931e;
 * {
@@ -50,6 +51,38 @@ button {
   }
 }
 .btn {
+  &-purple {
+    background: linear-gradient(180deg, #F2DEF7 0%, #D7B1E0 100%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.5s;
+    border: none;
+    height: 60px;
+    width: 286px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #C286D1;
+      box-shadow: -6px 12px 33px rgba(194, 134, 209, 0.46);
+      border-radius: 10px;
+      bottom: -4px;
+      z-index: -1;
+      transition: 0.5s;
+    }
+    &:hover {
+      &::before {
+        bottom: 0;
+      }
+    }
+  }
   &-yellow {
     background: linear-gradient(180deg, #ffd79b 0%, #ffb23e 100%);
     border-radius: 10px;
