@@ -613,20 +613,3 @@
   }
 }
 
-.footer {
-  position: relative;
-  &__wrapper {
-    position: relative;
-    &-bg {
-      position: absolute;
-      left: 50%;
-      width: 100%;
-      top: 0;
-      transform: translate(-50%);
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-}
