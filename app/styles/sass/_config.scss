@@ -20,9 +20,9 @@ body {
   overflow-x: hidden;
   max-width: 100vw;
 }
-body::-webkit-scrollbar {
-  width: 0px;
-}
+// body::-webkit-scrollbar {
+//   width: 0px;
+// }
 
 body {
   &.active {
