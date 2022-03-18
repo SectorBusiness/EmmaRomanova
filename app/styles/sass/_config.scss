@@ -201,3 +201,19 @@ button {
 //     }
 //   }
 // }
+
+@include mobile {
+  .btn-yellow  {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    h2 {
+      font-size: 30px;
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+}

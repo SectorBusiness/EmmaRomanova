@@ -84,6 +84,14 @@ sliderTime.addEventListener('mousemove', () => {
   calculateSliderCheak()
 })
 
+// if (window.innerWidth < 576) {
+//   setInterval(() => {
+//     console.log(dataBigForm);
+//     calculateSliderCheak()
+//   }, 1000);
+// }
+
+
 
 // доп услуги
 const dopServices = () => {

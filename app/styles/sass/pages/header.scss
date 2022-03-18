@@ -124,6 +124,10 @@
     &__nav {
       display: none;
     }
+    // &__logo {
+    //   width: 100%;
+
+    // }
     &__contact {
       &-menu {
         &-trigger {
@@ -138,5 +142,10 @@
         }
       }
     }
+  }
+}
+@include mobile {
+  .header__wrapper {
+    display: none;
   }
 }

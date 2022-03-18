@@ -82,7 +82,8 @@
 
     <section class="head__wrapper">
       <div class="head__bg">
-        <img src="images/src/head/headBg.jpg" alt="" />
+        <img class="d-block d-sm-none" src="images/src/head/headBgMob.jpg" alt="">
+        <img class="d-none d-sm-block " src="images/src/head/headBg.jpg" alt="" />
       </div>
       <div class="container">
         <div class="head row">
@@ -127,9 +128,10 @@
           </div>
         </div>
         <div class="aboutme__mid row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 aboutme__mid-img-wrapper">
             <div class="aboutme__mid-img">
-              <img src="images/src/about/photo.png" alt="" />
+              <img class="d-block d-sm-none" src="images/src/about/photoMobile.png" alt="" />
+              <img class="d-none d-sm-block" src="images/src/about/photo.png" alt="" />
             </div>
           </div>
           <div class="col-lg-6 aboutme__mid-right">
@@ -153,13 +155,13 @@
               >
             </p>
             <div class="row aboutme__mid-items">
-              <div class="col-6">
+              <div class="col-sm-6">
                 <div class="aboutme__mid-item">
                   <img src="images/src/about/about1.png" alt="" />
                   <p>Микрофоны, колонки и светомузыка</p>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-sm-6">
                 <div class="aboutme__mid-item">
                   <img src="images/src/about/about2.png" alt="" />
                   <p>Искуственный дым и мыльные пузыри</p>
@@ -309,7 +311,8 @@
 
     <section class="cooperation__wrapper">
       <div class="cooperation__wrapper-bg">
-        <img src="images/src/cooperation/cooperationbg.jpg" alt="" />
+        <img class="d-none d-sm-block" src="images/src/cooperation/cooperationbg.jpg" alt="" />
+        <img class="d-block d-sm-none" src="images/src/cooperation/cooperationBgMobile.jpg" alt="" />
       </div>
       <div class="container h-100">
         <div class="cooperation row">
@@ -392,7 +395,7 @@
     <section class="wherespend__wrapper">
       <div class="container">
         <div class="wherespend row">
-          <div class="col-lg-5 col-md-8">
+          <div class="col-lg-5 col-md-8 col-9">
             <div class="title">
               <h2>
                 Где возможно <br />
@@ -400,7 +403,7 @@
               </h2>
             </div>
           </div>
-          <div class="col-lg-4 col-md-3">
+          <div class="col-lg-4 col-md-3 col-3">
             <div class="sochial">
               <p>
                 Подпишитесь на мой <br />
@@ -466,6 +469,7 @@
     </section>
 
     <section class="calculate__wrapper">
+      <div class="calculate__wrapper-bg"><img src="images/src/calculate/calckBg.jpg" alt=""></div>
       <div class="container">
         <div class="calculate__title title">
           <h2>
@@ -473,6 +477,9 @@
           </h2>
         </div>
         <div class="calculate-calculate row">
+          <div class="calculate-calculate-bals">
+            <img src="images/src/calculate/bals.png" alt="">
+          </div>
           <div class="col-lg-1"></div>
           <div class="col-lg-6">
             <div class="calculate">
@@ -551,11 +558,11 @@
                   />
                 </div>
                 <div class="calculate-descp">
-                  <p class="active">1 час</p>
-                  <p>2 часа</p>
-                  <p>3 часа</p>
-                  <p>4 часа</p>
-                  <p>5 и больше часов</p>
+                  <p class="active">1 <span>час</span></p>
+                  <p>2 <span>часа</span></p>
+                  <p>3 <span>часа</span></p>
+                  <p>4 <span>часа</span></p>
+                  <p>5 <span>и больше часов</span></p>
                 </div>
               </div>
               <div class="calculate__serv">
@@ -762,7 +769,7 @@
     <section class="reviews__wrapper">
       <div class="container">
         <div class="reviews row">
-          <div class="col-lg-6 ">
+          <div class="col-lg-6">
             <div class="reviews-left">
              
               <div class="accordion" id="accordionExample">
@@ -964,7 +971,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 ">
+          <div class="col-lg-6">
             <div class="reviews-right">
               <h3 class="reviews-right-title">Отзывы моих клиентов:</h3>
               <div class="reviews-right-img">
@@ -992,12 +999,12 @@
       </div>
       <div class="container">
         <div class="footer row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-4">
             <a href="#" class="header__logo">
               <img src="images/src/head/logoHead.png" alt="" />
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-6 col-md-5 footer__contact-items">
             <a href="#" class="header__contact-item footer__contact-item">
               <svg
                 width="14"
@@ -1016,8 +1023,7 @@
                 <p>и вся Московская область</p>
               </div>
             </a>
-          </div>
-          <div class="col-lg-3">
+          
             <a href="#" class="header__contact-item footer__contact-item">
               <svg
                 width="19"
@@ -1037,7 +1043,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-3">
             <div class="footer__sochial">
               <a href="#" class="footer__sochial-item sochialIcon">
                 <svg
