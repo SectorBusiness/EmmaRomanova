@@ -75,6 +75,12 @@
   }
   &__contact {
     display: flex;
+    &-menu {
+      &-trigger {
+        cursor: pointer;
+        display: none;
+      }
+    }
     &-item {
       display: flex;
       align-items: start;
@@ -108,6 +114,28 @@
       img {
         object-fit: contain;
         width: 18px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    &__nav {
+      display: none;
+    }
+    &__contact {
+      &-menu {
+        &-trigger {
+          display: block;
+        }
+      }
+      &-item {
+        margin-left: 0;
+        margin-right: 100px;
+        &:first-child {
+          display: none;
+        }
       }
     }
   }
