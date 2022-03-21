@@ -165,6 +165,7 @@ selectEventItem.forEach((elem, index) => {
 selectEvent()
 const formCalculateSendName = document.querySelector('#formCalculateSendName')
 const formCalculateSendPhone = document.querySelector('#formCalculateSendPhone')
+const formCalculateSendSend = document.querySelector('.formCalculateSend-send');
 
 const sendForm = (e) => {
     e.preventDefault();
@@ -179,6 +180,12 @@ const sendForm = (e) => {
     }).then((response) => {
         console.log(response.body);
         console.log(response)
+        formCalculateSendSend.classList.add('active')
+        setTimeout(() => {
+            formCalculateSendSend.classList.remove('active')
+            formCalculateSendName.value = ''
+            formCalculateSendPhone.value = ''
+        }, 2000);
     })
 }
 formCalculateSend.addEventListener('submit', sendForm)

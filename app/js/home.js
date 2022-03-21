@@ -1,8 +1,3 @@
-
-
-
-
-
 //modals
 const body = document.querySelector('body');
 const modalClose = document.querySelectorAll('.modal-close');
@@ -24,8 +19,7 @@ const modalEventPriceSecond = document.querySelector('.modal-event-price-second'
 
 const activitiesCardDescp = document.querySelectorAll('.activities__card-descp');
 
-const modalEventData = [
-    {
+const modalEventData = [{
         title: '1',
         text: 'Проведение свадьбы вместе с диджеем, 6 часов (все конкурсы, музыка и время проведения согласовываются индивидуально)',
         onePrice: 'Стоимость: от 18 000Р',
@@ -125,7 +119,7 @@ headerContactMenuTrigger.onclick = () => {
 }
 
 let prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
+window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         headerWrapper.classList.remove('hide')
@@ -134,3 +128,21 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+
+const formModal = document.querySelector('#formModal');
+const sendFormModal = (e) => {
+    e.preventDefault();
+
+    fetch('mail.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: new FormData(formModal)
+    }).then((response) => {
+        console.log(response.body);
+        console.log(response)
+    })
+}
+formModal.addEventListener('submit', sendFormModal)
