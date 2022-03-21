@@ -99,3 +99,17 @@ activitiesCard.forEach((elem, index) => {
         }
     }
 })
+
+const headerWrapper = document.querySelector('.header__wrapper');
+
+const activeMenu = () => {
+    if (window.pageYOffset > 150) {
+        headerWrapper.classList.add("active")
+    } else {
+        headerWrapper.classList.remove("active")
+    }
+  }
+  
+  window.addEventListener("scroll", () => {
+    activeMenu()
+  });

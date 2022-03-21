@@ -107,3 +107,26 @@
     }
   }
 }
+
+@include mobile {
+  .footer {
+    justify-content: space-between;
+    &-footer {
+      display: flex;
+      flex-direction: column;
+      a {
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+    &__contact {
+      &-items {
+        display: none;
+      }
+    }
+  }
+}
