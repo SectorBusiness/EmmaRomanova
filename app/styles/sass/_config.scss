@@ -65,7 +65,7 @@ button {
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: 0.5s;
+    transition: 0.2s;
     border: none;
     height: 60px;
     width: 286px;
@@ -79,7 +79,7 @@ button {
       border-radius: 10px;
       bottom: -4px;
       z-index: -1;
-      transition: 0.5s;
+      transition: 0.2s;
     }
     &:hover {
       &::before {
@@ -97,7 +97,7 @@ button {
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: 0.5s;
+    transition: 0.2s;
     border: none;
     height: 60px;
     width: 286px;
@@ -111,7 +111,7 @@ button {
       border-radius: 10px;
       bottom: -4px;
       z-index: -1;
-      transition: 0.5s;
+      transition: 0.2s;
     }
     &:hover {
       &::before {
