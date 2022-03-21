@@ -10,6 +10,10 @@ const openModalContact = document.querySelectorAll('.openModalContact');
 const modalBg = document.querySelector('.modal-bg');
 const modalContact = document.querySelector('.modal-contact');
 const modalEvent = document.querySelector('.modal-event');
+const headerContactMenuTrigger = document.querySelector('.header__contact-menu-trigger');
+const menuMobile = document.querySelector('.menuMobile');
+const headerWrapper = document.querySelector('.header__wrapper');
+
 
 // modalEvent
 const activitiesCard = document.querySelectorAll('.activities__card');
@@ -100,7 +104,6 @@ activitiesCard.forEach((elem, index) => {
     }
 })
 
-const headerWrapper = document.querySelector('.header__wrapper');
 
 const activeMenu = () => {
     if (window.pageYOffset > 150) {
@@ -115,8 +118,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-const headerContactMenuTrigger = document.querySelector('.header__contact-menu-trigger');
-const menuMobile = document.querySelector('.menuMobile');
+
 headerContactMenuTrigger.onclick = () => {
     menuMobile.classList.toggle('active')
     body.classList.toggle('active');

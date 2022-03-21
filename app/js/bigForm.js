@@ -32,23 +32,26 @@ select();
 
 const dataBigForm = [
   {
-    mainEvent: '',
-    peoples: '',
+    mainEvent: 'Юбилей',
+    people: 'до 18',
     longTimeEvent: '1 час',
-    dopEvent: []
+    dopEvent: [],
+    name: '',
+    telephone: '',
   },
 ]
 const sliderTime = document.querySelector('.slider-time');
 const firstSelect = document.querySelector('.firstSelect');
+const secondSelect = document.querySelector('.secondSelect');
 const calculateDescpItem = document.querySelectorAll('.calculate-descp p');
 const calculateServItem = document.querySelectorAll('.calculate__serv-item');
 const servInput = document.querySelectorAll('.serv-input');
-
 
 const selectEventMain = document.querySelector('.selectEvent');
 const selectEventItem = document.querySelectorAll('.selectEventItem');
 const selectCalculatePeopleMain = document.querySelector('.selectCalculatePeopleMain');
 const selectCalculatePeople = document.querySelectorAll('.selectCalculatePeople')
+const formCalculateSend = document.querySelector('.formCalculateSend')
 
 const removeCalcItem = () => {
   calculateDescpItem.forEach(elem => {
@@ -84,6 +87,15 @@ sliderTime.addEventListener('mousemove', () => {
   calculateSliderCheak()
 })
 
+const selectSecondData = () => {
+  dataBigForm[0].people = selectCalculatePeopleMain.textContent 
+  console.log(dataBigForm);
+}
+
+secondSelect.onclick = () => {
+  selectSecondData()
+}
+
 // if (window.innerWidth < 576) {
 //   setInterval(() => {
 //     console.log(dataBigForm);
@@ -98,7 +110,7 @@ const dopServices = () => {
   servInput.forEach((elem, index) => {
     if (elem.checked) {
       dataBigForm[0].dopEvent.push(elem.name)
-      console.log(dataBigForm[0]);
+      // console.log(dataBigForm[0]);
     }
   })
 }
@@ -149,6 +161,11 @@ const selectEvent = () => {
 selectEventItem.forEach((elem, index) => {
   elem.onclick = () => {
     selectEvent();
+    console.log(dataBigForm);
   }
 });
 selectEvent()
+const formCalculateSendName = document.querySelector('#formCalculateSendName')
+const formCalculateSendPhone = document.querySelector('#formCalculateSendPhone')
+
+formCalculateSend
