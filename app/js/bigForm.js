@@ -94,12 +94,12 @@ secondSelect.onclick = () => {
     selectSecondData()
 }
 
-// if (window.innerWidth < 576) {
-//   setInterval(() => {
-//     console.log(dataBigForm);
-//     calculateSliderCheak()
-//   }, 1000);
-// }
+if (window.innerWidth < 576) {
+    setInterval(() => {
+        console.log(dataBigForm);
+        calculateSliderCheak()
+    }, 1000);
+}
 
 
 
