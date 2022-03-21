@@ -131,6 +131,7 @@ window.onscroll = function() {
 
 
 const formModal = document.querySelector('.formModal');
+const formModalSend = document.querySelector('.formModal-send');
 const sendFormModal = (e) => {
     e.preventDefault();
 
@@ -143,6 +144,13 @@ const sendFormModal = (e) => {
     }).then((response) => {
         console.log(response.body);
         console.log(response)
+        formModalSend.classList.add('active')
+        setTimeout(() => {
+            formModalSend.classList.remove('active')
+            modalClose.forEach(elem => {
+                elem.click()
+            })
+        }, 2000);
     })
 }
 formModal.addEventListener('submit', sendFormModal)
