@@ -130,7 +130,7 @@ window.onscroll = function() {
 }
 
 
-const formModal = document.querySelector('#formModal');
+const formModal = document.querySelector('.formModal');
 const sendFormModal = (e) => {
     e.preventDefault();
 

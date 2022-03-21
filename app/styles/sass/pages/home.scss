@@ -446,7 +446,31 @@
     }
   }
 }
-
+.formModal {
+  position: relative;
+  &-send {
+    position: absolute;
+    background-color: $white;
+    width: 123%;
+    height: 123%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Serif Pro",serif;
+    font-weight: 600;
+    font-size: 20px;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    left: 50%;
+    transform: translate(-50%);
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
 .calculate {
   padding-top: 55px;
   padding-bottom: 55px;
