@@ -108,8 +108,27 @@ const activeMenu = () => {
     } else {
         headerWrapper.classList.remove("active")
     }
-  }
-  
-  window.addEventListener("scroll", () => {
+}
+
+window.addEventListener("scroll", () => {
     activeMenu()
-  });
+});
+
+
+const headerContactMenuTrigger = document.querySelector('.header__contact-menu-trigger');
+const menuMobile = document.querySelector('.menuMobile');
+headerContactMenuTrigger.onclick = () => {
+    menuMobile.classList.toggle('active')
+    body.classList.toggle('active');
+}
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        headerWrapper.classList.remove('hide')
+    } else {
+        headerWrapper.classList.add('hide')
+    }
+    prevScrollpos = currentScrollPos;
+}

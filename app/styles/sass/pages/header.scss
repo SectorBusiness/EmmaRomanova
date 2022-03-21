@@ -12,6 +12,9 @@
     &.active {
       background-color: #fff;
     }
+    &.hide {
+      top: -160px;
+    }
   }
   &__nav {
     display: flex;
