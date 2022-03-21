@@ -8,7 +8,7 @@ const modalEvent = document.querySelector('.modal-event');
 const headerContactMenuTrigger = document.querySelector('.header__contact-menu-trigger');
 const menuMobile = document.querySelector('.menuMobile');
 const headerWrapper = document.querySelector('.header__wrapper');
-
+const menuMobileLink = document.querySelectorAll('.menuMobile-link');
 
 // modalEvent
 const activitiesCard = document.querySelectorAll('.activities__card');
@@ -117,6 +117,13 @@ headerContactMenuTrigger.onclick = () => {
     menuMobile.classList.toggle('active')
     body.classList.toggle('active');
 }
+menuMobileLink.forEach(el => {
+    el.onclick = () => {
+
+        menuMobile.classList.remove('active')
+        body.classList.remove('active');
+    }
+})
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -130,16 +137,19 @@ window.onscroll = function() {
 }
 
 
+//modals
+const allInput = document.querySelectorAll('.calculate__form-wrapper form input')
+const allInputValue = () => {
+    allInput.forEach(elem => elem.value = '')
+}
 const formModal = document.querySelector('.formModal');
 const formModalSend = document.querySelector('.formModal-send');
 const sendFormModal = (e) => {
     e.preventDefault();
 
-    fetch('mail.php', {
+    fetch('mailModal.php', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json;charset=utf-8'
-        },
+        headers: { 'Content-Type': 'application/json;charset=utf-8' },
         body: new FormData(formModal)
     }).then((response) => {
         console.log(response.body);
@@ -149,8 +159,33 @@ const sendFormModal = (e) => {
             formModalSend.classList.remove('active')
             modalClose.forEach(elem => {
                 elem.click()
+                allInputValue()
             })
         }, 2000);
     })
 }
 formModal.addEventListener('submit', sendFormModal)
+
+//форма
+const contactmeFormForm = document.querySelector('.contactme__form-form');
+const contactmeFormFormBtn = document.querySelector('.contactme__form-form button');
+const contactmeFormFormInputs = document.querySelectorAll('.contactme__form-form input');
+
+const sendFormNow = (e) => {
+    e.preventDefault();
+    fetch('mailModal.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json;charset=utf-8' },
+        body: new FormData(formModal)
+    }).then((response) => {
+        console.log(response.body);
+        console.log(response)
+        contactmeFormFormBtn.textContent = "ОТПРАВЛЕНО"
+        contactmeFormFormInputs.forEach(el => el.value = '')
+        setTimeout(() => {
+            contactmeFormFormBtn.textContent = "ОБСУДИТЬ МЕРОПРИЯТИЕ"
+
+        }, 2000);
+    })
+}
+contactmeFormForm.addEventListener('submit', sendFormNow)

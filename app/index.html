@@ -1,180 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Эмма Романова</title>
-  </head>
+</head>
 
-  <body class="">
+<body class="">
     <header class="header__wrapper">
-      <div class="container">
-        <nav class="header">
-          <ul class="header__nav">
-            <li class="header__nav-item"><a href="#services">Услуги</a></li>
-            <li class="header__nav-item"><a href="#aboutme">Обо мне</a></li>
-            <li class="header__nav-item">
-              <a href="#contactmeLink">Контакты</a>
-            </li>
-          </ul>
-          <a href="#" class="header__logo">
-            <img src="images/src/head/logoHead.png" alt="" />
-          </a>
-          <div class="header__contact">
-            <a
-              target="_blank"
-              href="https://goo.gl/maps/h5wNQRBtYf7jaw4x9"
-              class="header__contact-item"
-            >
-              <div class="header__contact-item-descp">
-                <h3>Ногинск, Москва</h3>
-                <p>и вся Московская область</p>
-              </div>
-              <svg
-                width="14"
-                height="20"
-                viewBox="0 0 14 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+        <div class="container">
+            <nav class="header">
+                <ul class="header__nav">
+                    <li class="header__nav-item"><a href="#services">Услуги</a></li>
+                    <li class="header__nav-item"><a href="#aboutme">Обо мне</a></li>
+                    <li class="header__nav-item">
+                        <a href="#contactmeLink">Контакты</a>
+                    </li>
+                </ul>
+                <a href="#" class="header__logo">
+                    <img src="images/src/head/logoHead.png" alt="" />
+                </a>
+                <div class="header__contact">
+                    <a target="_blank" href="https://goo.gl/maps/h5wNQRBtYf7jaw4x9" class="header__contact-item">
+                        <div class="header__contact-item-descp">
+                            <h3>Ногинск, Москва</h3>
+                            <p>и вся Московская область</p>
+                        </div>
+                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
                   fill="#D7B1E0"
                 />
               </svg>
-            </a>
-            <a href="tel:+7 (905) 793-48-91" class="header__contact-item">
-              <div class="header__contact-item-descp">
-                <h3>+7 (905) 793-48-91</h3>
-                <p>Обратный звонок</p>
-              </div>
-              <svg
-                width="19"
-                height="19"
-                viewBox="0 0 19 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                    </a>
+                    <a href="tel:+7 (905) 793-48-91" class="header__contact-item">
+                        <div class="header__contact-item-descp">
+                            <h3>+7 (905) 793-48-91</h3>
+                            <p>Обратный звонок</p>
+                        </div>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M18.7963 14.41C18.089 13.0729 15.6329 11.6232 15.5248 11.5598C15.2092 11.3801 14.8799 11.285 14.5717 11.285C14.1134 11.285 13.7383 11.4949 13.5111 11.8768C13.1518 12.3065 12.7062 12.8088 12.5981 12.8866C11.7612 13.4544 11.1061 13.3899 10.3812 12.6651L6.33546 8.61899C5.61515 7.89868 5.54893 7.23543 6.11285 6.40311C6.19175 6.29427 6.69403 5.84834 7.12375 5.48872C7.39779 5.32564 7.58588 5.0833 7.6683 4.78602C7.77784 4.39046 7.69718 3.92517 7.43864 3.47185C7.37771 3.36759 5.92722 0.911134 4.59086 0.204208C4.34148 0.072122 4.0604 0.00238037 3.77862 0.00238037C3.31438 0.00238037 2.87762 0.183427 2.54934 0.511353L1.65538 1.40496C0.241525 2.81846 -0.270266 4.42076 0.13339 6.16711C0.470122 7.62253 1.45144 9.17128 3.05056 10.7701L8.23011 15.9496C10.254 17.9735 12.1835 18.9999 13.9651 18.9999C13.9651 18.9999 13.9651 18.9999 13.9655 18.9999C15.2758 18.9999 16.4973 18.443 17.5952 17.3451L18.4888 16.4515C19.0319 15.9087 19.1552 15.088 18.7963 14.41Z"
                   fill="#D7B1E0"
                 />
               </svg>
-            </a>
-            <div class="header__contact-menu-trigger">
-              <img src="images/src/head/menuTriger.png" alt="" />
-            </div>
-          </div>
-        </nav>
-      </div>
+                    </a>
+                    <div class="header__contact-menu-trigger">
+                        <img src="images/src/head/menuTriger.png" alt="" />
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section class="head__wrapper">
-      <div class="head__bg">
-        <img
-          class="d-block d-sm-none"
-          src="images/src/head/headBgMob.jpg"
-          alt=""
-        />
-        <img
-          class="d-none d-sm-block"
-          src="images/src/head/headBg.jpg"
-          alt=""
-        />
-      </div>
-      <div class="container">
-        <div class="head row">
-          <div class="col-lg-5">
-            <div class="head__descp">
-              <h1>
-                <span>Организую и проведу</span> <br />
-                незабываемое мероприятие
-              </h1>
-              <button class="btn-yellow openModalContact">
+        <div class="head__bg">
+            <img class="d-block d-sm-none" src="images/src/head/headBgMob.jpg" alt="" />
+            <img class="d-none d-sm-block" src="images/src/head/headBg.jpg" alt="" />
+        </div>
+        <div class="container">
+            <div class="head row">
+                <div class="col-lg-5">
+                    <div class="head__descp">
+                        <h1>
+                            <span>Организую и проведу</span> <br /> незабываемое мероприятие
+                        </h1>
+                        <button class="btn-yellow openModalContact">
                 ОБСУДИТЬ МЕРОПРИЯТИЕ
               </button>
-              <div class="head__descp-coffee">
-                <img src="images/src/head/coffee.png" alt="" />
-                <p>
-                  Встретимся в удобном месте за чащечкой кофе и
-                  <span>обсудим все детали!</span>
-                </p>
-              </div>
+                        <div class="head__descp-coffee">
+                            <img src="images/src/head/coffee.png" alt="" />
+                            <p>
+                                Встретимся в удобном месте за чащечкой кофе и
+                                <span>обсудим все детали!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <section id="aboutme" class="aboutme__wrapper">
-      <div class="aboutme__wrapper-bg">
-        <img src="images/src/about/aboutBg.png" alt="" />
-      </div>
-      <div class="container aboutme__wrapper-nobg">
-        <div class="aboutme__up">
-          <div class="aboutme__up-item">
-            <img src="images/src/about/okey.svg" alt="" />
-            <p>Индивидуальный и внимательный подход к каждому клиенту</p>
-          </div>
-          <div class="aboutme__up-item">
-            <img src="images/src/about/okey.svg" alt="" />
-            <p>Индивидуальный и внимательный подход к каждому клиенту</p>
-          </div>
-          <div class="aboutme__up-item">
-            <img src="images/src/about/okey.svg" alt="" />
-            <p>Индивидуальный и внимательный подход к каждому клиенту</p>
-          </div>
+        <div class="aboutme__wrapper-bg">
+            <img src="images/src/about/aboutBg.png" alt="" />
         </div>
-        <div class="aboutme__mid row">
-          <div class="col-lg-6 aboutme__mid-img-wrapper">
-            <div class="aboutme__mid-img">
-              <img
-                class="d-block d-sm-none"
-                src="images/src/about/photoMobile.png"
-                alt=""
-              />
-              <img
-                class="d-none d-sm-block"
-                src="images/src/about/photo.png"
-                alt=""
-              />
+        <div class="container aboutme__wrapper-nobg">
+            <div class="aboutme__up">
+                <div class="aboutme__up-item">
+                    <img src="images/src/about/okey.svg" alt="" />
+                    <p>Индивидуальный и внимательный подход к каждому клиенту</p>
+                </div>
+                <div class="aboutme__up-item">
+                    <img src="images/src/about/okey.svg" alt="" />
+                    <p>Индивидуальный и внимательный подход к каждому клиенту</p>
+                </div>
+                <div class="aboutme__up-item">
+                    <img src="images/src/about/okey.svg" alt="" />
+                    <p>Индивидуальный и внимательный подход к каждому клиенту</p>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6 aboutme__mid-right">
-            <div class="title">
-              <h2>
-                Расскажу немного <br />
-                <span>о себе</span>
-              </h2>
-            </div>
-            <p>
-              Профессиональная ведущая юбилеев, свадеб, корпоративов и крутых
-              вечеринок! Знаю, как грамотно построить вечер, расположить гостей
-              и создать душевную атмосферу.
-            </p>
-            <p>
-              Со школьной поры на сцене - более 25 лет опыта в проведении
-              мероприятий. Написала более 50 уникальных сценариев, а также
-              работаю
-              <span
-                >в паре с профессиональным диджеем со своей аппаратурой:</span
+            <div class="aboutme__mid row">
+                <div class="col-lg-6 aboutme__mid-img-wrapper">
+                    <div class="aboutme__mid-img">
+                        <img class="d-block d-sm-none" src="images/src/about/photoMobile.png" alt="" />
+                        <img class="d-none d-sm-block" src="images/src/about/photo.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6 aboutme__mid-right">
+                    <div class="title">
+                        <h2>
+                            Расскажу немного <br />
+                            <span>о себе</span>
+                        </h2>
+                    </div>
+                    <p>
+                        Профессиональная ведущая юбилеев, свадеб, корпоративов и крутых вечеринок! Знаю, как грамотно построить вечер, расположить гостей и создать душевную атмосферу.
+                    </p>
+                    <p>
+                        Со школьной поры на сцене - более 25 лет опыта в проведении мероприятий. Написала более 50 уникальных сценариев, а также работаю
+                        <span>в паре с профессиональным диджеем со своей аппаратурой:</span
               >
             </p>
             <div class="row aboutme__mid-items">
@@ -203,255 +155,223 @@
             <h2>
               Какие мероприятия <br />
               <span>я провожу?</span>
-            </h2>
-          </div>
-          <div class="activities__cards row">
-            <div class="col-lg-4 col-md-6">
-              <div class="activities__card">
-                <div class="activities__card-img">
-                  <img src="images/src/activities/1.jpg" alt="" />
+                        </h2>
                 </div>
-                <div class="activities__card-descp">
-                  Свадьбы и выездные <br />
-                  регистрации
+                <div class="activities__cards row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="activities__card">
+                            <div class="activities__card-img">
+                                <img src="images/src/activities/1.jpg" alt="" />
+                            </div>
+                            <div class="activities__card-descp">
+                                Свадьбы и выездные <br /> регистрации
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="activities__card">
+                            <div class="activities__card-img">
+                                <img src="images/src/activities/2.jpg" alt="" />
+                            </div>
+                            <div class="activities__card-descp">
+                                Юбилеи, дни рождения для взрослых и детей
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="activities__card">
+                            <div class="activities__card-img">
+                                <img src="images/src/activities/3.jpg" alt="" />
+                            </div>
+                            <div class="activities__card-descp">
+                                Выпускные в школах (4, 9 и 11 классы) и в детских садах
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="activities__card">
+                            <div class="activities__card-img">
+                                <img src="images/src/activities/4.jpg" alt="" />
+                            </div>
+                            <div class="activities__card-descp">
+                                Корпоративы, презентации, розыгрыши
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="activities__card">
+                            <div class="activities__card-img">
+                                <img src="images/src/activities/5.jpg" alt="" />
+                            </div>
+                            <div class="activities__card-descp">
+                                Открытие магазинов, мини-шоу и шоу городского масштаба
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="activities__card">
+                            <div class="activities__card-img">
+                                <img src="images/src/activities/6.jpg" alt="" />
+                            </div>
+                            <div class="activities__card-descp">
+                                Тематические вечеринки и девичники
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="activities__card">
-                <div class="activities__card-img">
-                  <img src="images/src/activities/2.jpg" alt="" />
-                </div>
-                <div class="activities__card-descp">
-                  Юбилеи, дни рождения для взрослых и детей
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="activities__card">
-                <div class="activities__card-img">
-                  <img src="images/src/activities/3.jpg" alt="" />
-                </div>
-                <div class="activities__card-descp">
-                  Выпускные в школах (4, 9 и 11 классы) и в детских садах
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="activities__card">
-                <div class="activities__card-img">
-                  <img src="images/src/activities/4.jpg" alt="" />
-                </div>
-                <div class="activities__card-descp">
-                  Корпоративы, презентации, розыгрыши
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="activities__card">
-                <div class="activities__card-img">
-                  <img src="images/src/activities/5.jpg" alt="" />
-                </div>
-                <div class="activities__card-descp">
-                  Открытие магазинов, мини-шоу и шоу городского масштаба
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="activities__card">
-                <div class="activities__card-img">
-                  <img src="images/src/activities/6.jpg" alt="" />
-                </div>
-                <div class="activities__card-descp">
-                  Тематические вечеринки и девичники
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="contactme__wrapper">
-      <div class="container">
-        <div class="contactme row">
-          <div class="col-lg-4">
-            <form class="contactme__form">
-              <div class="contactme__form-up">
-                <img src="images/src/contactme/micro.png" alt="" />
-                <p>
-                  Задайте все интересующие вопросы <span>прямо сейчас:</span>
-                </p>
-              </div>
-              <div class="contactme__form-form">
-                <input placeholder="Как Вас зовут?" class="input" type="text" />
-                <input
-                  placeholder="Ваш номер телефона"
-                  class="input"
-                  type="text"
-                />
-                <button class="btn-yellow">ОБСУДИТЬ МЕРОПРИЯТИЕ</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-8">
-            <div class="contactme__descp">
-              <div class="title">
-                <h2>
-                  Со мной вы можете <br />
-                  <span>не волноваться о мероприятии!</span>
-                </h2>
-              </div>
-              <p>
-                Я делаю людей счастливыми на протяжении уже 25 лет.
-                Отпраздновала с вами уже сотни мероприятий и могу с уверенностью
-                говорить о том, что знаю толк в проведении любых праздников.
-                Богатый опыт, позитивный настрой и креативный взгляд
-                подсказывают, как создать яркий и интересный сценарий для
-                мероприятия.
-              </p>
-              <div class="contactme__descp-items">
-                <div class="contactme__descp-item">
-                  <p>
-                    При встрече учту абсолютно все ваши пожелания касательно
-                    музыкального сопровождения
-                  </p>
-                  <img src="images/src/contactme/ok.svg" alt="" />
+        <div class="container">
+            <div class="contactme row">
+                <div class="col-lg-4">
+                    <div class="contactme__form">
+                        <div class="contactme__form-up">
+                            <img src="images/src/contactme/micro.png" alt="" />
+                            <p>
+                                Задайте все интересующие вопросы <span>прямо сейчас:</span>
+                            </p>
+                        </div>
+                        <form action="#" class="contactme__form-form">
+                            <input required placeholder="Как Вас зовут?" class="input" type="text" />
+                            <input required data-tel-input placeholder="Ваш номер телефона" class="input" type="text" />
+                            <button type="submit" class="btn-yellow">
+
+                  ОБСУДИТЬ МЕРОПРИЯТИЕ
+                </button>
+                        </form>
+                    </div>
                 </div>
-                <div class="contactme__descp-item">
-                  <p>
-                    Составлю уникальный сценарий именно для вас и заранее
-                    согласую все игры и конкурсы
-                  </p>
-                  <img src="images/src/contactme/ok.svg" alt="" />
+                <div class="col-lg-8">
+                    <div class="contactme__descp">
+                        <div class="title">
+                            <h2>
+                                Со мной вы можете <br />
+                                <span>не волноваться о мероприятии!</span>
+                            </h2>
+                        </div>
+                        <p>
+                            Я делаю людей счастливыми на протяжении уже 25 лет. Отпраздновала с вами уже сотни мероприятий и могу с уверенностью говорить о том, что знаю толк в проведении любых праздников. Богатый опыт, позитивный настрой и креативный взгляд подсказывают, как создать
+                            яркий и интересный сценарий для мероприятия.
+                        </p>
+                        <div class="contactme__descp-items">
+                            <div class="contactme__descp-item">
+                                <p>
+                                    При встрече учту абсолютно все ваши пожелания касательно музыкального сопровождения
+                                </p>
+                                <img src="images/src/contactme/ok.svg" alt="" />
+                            </div>
+                            <div class="contactme__descp-item">
+                                <p>
+                                    Составлю уникальный сценарий именно для вас и заранее согласую все игры и конкурсы
+                                </p>
+                                <img src="images/src/contactme/ok.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="cooperation__wrapper">
-      <div class="cooperation__wrapper-bg">
-        <img
-          class="d-none d-sm-block"
-          src="images/src/cooperation/cooperationbg.jpg"
-          alt=""
-        />
-        <img
-          class="d-block d-sm-none"
-          src="images/src/cooperation/cooperationBgMobile.jpg"
-          alt=""
-        />
-      </div>
-      <div class="container h-100">
-        <div class="cooperation row">
-          <!-- <div class="col-lg-5"></div> -->
-          <div class="col-lg-7 col-md-6">
-            <div class="title">
-              <h2>
-                Как будет проходить <br />
-                <span>сотрудничество?</span>
-              </h2>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="cooperation-item">
-                  <div class="cooperation-item-img">
-                    <img src="images/src/cooperation/coop1.png" alt="" />
-                  </div>
-                  <div class="cooperation-item-descp">
-                    <h4>Встреча</h4>
-                    <p>Проговорим все детали и сценарий за чашечкой кофе</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="cooperation-item">
-                  <div class="cooperation-item-img">
-                    <img src="images/src/cooperation/coopArr.png" alt="" />
-                  </div>
-                  <div class="cooperation-item-descp">
-                    <h4>Встреча</h4>
-                    <p>Проговорим все детали и сценарий за чашечкой кофе</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="cooperation-item">
-                  <div class="cooperation-item-img">
-                    <img src="images/src/cooperation/coopArr.png" alt="" />
-                  </div>
-                  <div class="cooperation-item-descp">
-                    <h4>Встреча</h4>
-                    <p>Проговорим все детали и сценарий за чашечкой кофе</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="cooperation-item">
-                  <div class="cooperation-item-img">
-                    <img src="images/src/cooperation/coop4.png" alt="" />
-                  </div>
-                  <div class="cooperation-item-descp">
-                    <h4>Встреча</h4>
-                    <p>Проговорим все детали и сценарий за чашечкой кофе</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="cooperation-bord">
-                <h4>
-                  Что входит в услугу <span>проведения мероприятия?</span>
-                </h4>
-                <p>
-                  Разработка сценария, проведение праздника, музыкальное
-                  сопровождение застолья и конкурсов, проведение танцевальной
-                  программы.
-                </p>
-                <img
-                  class="cooperation-bord-img"
-                  src="images/src/cooperation/qiestions.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
+        <div class="cooperation__wrapper-bg">
+            <img class="d-none d-sm-block" src="images/src/cooperation/cooperationbg.jpg" alt="" />
+            <img class="d-block d-sm-none" src="images/src/cooperation/cooperationBgMobile.jpg" alt="" />
         </div>
-      </div>
+        <div class="container h-100">
+            <div class="cooperation row">
+                <!-- <div class="col-lg-5"></div> -->
+                <div class="col-lg-7 col-md-6">
+                    <div class="title">
+                        <h2>
+                            Как будет проходить <br />
+                            <span>сотрудничество?</span>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="cooperation-item">
+                                <div class="cooperation-item-img">
+                                    <img src="images/src/cooperation/coop1.png" alt="" />
+                                </div>
+                                <div class="cooperation-item-descp">
+                                    <h4>Встреча</h4>
+                                    <p>Проговорим все детали и сценарий за чашечкой кофе</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cooperation-item">
+                                <div class="cooperation-item-img">
+                                    <img src="images/src/cooperation/coopArr.png" alt="" />
+                                </div>
+                                <div class="cooperation-item-descp">
+                                    <h4>Встреча</h4>
+                                    <p>Проговорим все детали и сценарий за чашечкой кофе</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cooperation-item">
+                                <div class="cooperation-item-img">
+                                    <img src="images/src/cooperation/coopArr.png" alt="" />
+                                </div>
+                                <div class="cooperation-item-descp">
+                                    <h4>Встреча</h4>
+                                    <p>Проговорим все детали и сценарий за чашечкой кофе</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="cooperation-item">
+                                <div class="cooperation-item-img">
+                                    <img src="images/src/cooperation/coop4.png" alt="" />
+                                </div>
+                                <div class="cooperation-item-descp">
+                                    <h4>Встреча</h4>
+                                    <p>Проговорим все детали и сценарий за чашечкой кофе</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="cooperation-bord">
+                            <h4>
+                                Что входит в услугу <span>проведения мероприятия?</span>
+                            </h4>
+                            <p>
+                                Разработка сценария, проведение праздника, музыкальное сопровождение застолья и конкурсов, проведение танцевальной программы.
+                            </p>
+                            <img class="cooperation-bord-img" src="images/src/cooperation/qiestions.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="wherespend__wrapper">
-      <div class="container">
-        <div class="wherespend row">
-          <div class="col-lg-5 col-md-8 col-9">
-            <div class="title">
-              <h2>
-                Где возможно <br />
-                <span>провести мероприятие?</span>
-              </h2>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-3 col-3">
-            <div class="sochial">
-              <p>
-                Подпишитесь на мой <br />
-                <span>instagram:</span>
-              </p>
-              <a
-                class="sochialIcon"
-                target="_blank"
-                href="https://www.instagram.com/emma_romanova/"
-              >
-                <svg
-                  width="47"
-                  height="47"
-                  viewBox="0 0 47 47"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+        <div class="container">
+            <div class="wherespend row">
+                <div class="col-lg-5 col-md-8 col-9">
+                    <div class="title">
+                        <h2>
+                            Где возможно <br />
+                            <span>провести мероприятие?</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-3">
+                    <div class="sochial">
+                        <p>
+                            Подпишитесь на мой <br />
+                            <span>instagram:</span>
+                        </p>
+                        <a class="sochialIcon" target="_blank" href="https://www.instagram.com/emma_romanova/">
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="23.5" cy="23.5" r="23.5" fill="#FFB23E" />
                   <path
                     d="M27.3398 14H19.6602C16.5392 14 14 16.5392 14 19.6602V27.3398C14 30.4608 16.5392 33 19.6602 33H27.3398C30.4608 33 33 30.4608 33 27.3398V19.6602C33 16.5392 30.4608 14 27.3398 14ZM31.0886 27.3398C31.0886 29.4102 29.4102 31.0886 27.3398 31.0886H19.6602C17.5898 31.0886 15.9114 29.4102 15.9114 27.3398V19.6602C15.9114 17.5898 17.5898 15.9114 19.6602 15.9114H27.3398C29.4102 15.9114 31.0886 17.5898 31.0886 19.6602V27.3398Z"
@@ -839,34 +759,18 @@
                         <circle cx="12.5" cy="12.5" r="12.5" fill="#D7B1E0" />
                         <circle cx="12.5" cy="12.5" r="5.5" fill="white" />
                       </svg>
-                      <p>Что вы можете предложить для нашего мероприятия?</p>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Опишите ваши пожелания и узнайте, что предложит ведущий
-                      для разнообразия праздничной программы. Одни и те же
-                      традиции можно обыграть разными способами. Ваши
-                      представления о том, как пройдет этот праздник, должны
-                      совпадать.
+                            <p>Что вы можете предложить для нашего мероприятия?</p>
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Опишите ваши пожелания и узнайте, что предложит ведущий для разнообразия праздничной программы. Одни и те же традиции можно обыграть разными способами. Ваши представления о том, как пройдет этот праздник, должны совпадать.
+                                </div>
+                            </div>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       <svg
                         width="25"
                         height="25"
@@ -879,32 +783,17 @@
                       </svg>
                       <p>Можно ли пригласить на мероприятие своего диджея?</p>
                     </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Многие ведущие подготавливают свою программу совместно с
-                      музыкальным сопровождением. Поэтому целесообразно застолье
-                      и конкурсы проводить с диджеем, который работает в паре с
-                      ведущим. <br />
-                      А танцевальную программу может провести ваш диджей.
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Многие ведущие подготавливают свою программу совместно с музыкальным сопровождением. Поэтому целесообразно застолье и конкурсы проводить с диджеем, который работает в паре с ведущим. <br /> А танцевальную программу может
+                                провести ваш диджей.
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       <svg
                         width="25"
                         height="25"
@@ -920,31 +809,16 @@
                         (кафе)?
                       </p>
                     </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Да. Если на это есть согласие самого ресторана. И если
-                      заказчик возьмет на себя полную ответственность за
-                      исправность аппаратуры, как до так и после праздника, в
-                      письменном виде.
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Да. Если на это есть согласие самого ресторана. И если заказчик возьмет на себя полную ответственность за исправность аппаратуры, как до так и после праздника, в письменном виде.
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFoure">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFoure"
-                      aria-expanded="false"
-                      aria-controls="collapseFoure"
-                    >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFoure">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFoure" aria-expanded="false" aria-controls="collapseFoure">
                       <svg
                         width="25"
                         height="25"
@@ -957,32 +831,17 @@
                       </svg>
                       <p>Работаете ли вы в позднее время?</p>
                     </button>
-                  </h2>
-                  <div
-                    id="collapseFoure"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingFoure"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Если вы собираетесь праздновать допоздна и вам будет
-                      необходим ведущий после полуночи, или время праздника
-                      нужно продлить дольше оговоренного времени, лучше уточните
-                      заранее, сколько нужно будет доплатить за это время.
-                      Иногда после полуночи почасовая оплата выше.
+                        </h2>
+                        <div id="collapseFoure" class="accordion-collapse collapse" aria-labelledby="headingFoure" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Если вы собираетесь праздновать допоздна и вам будет необходим ведущий после полуночи, или время праздника нужно продлить дольше оговоренного времени, лучше уточните заранее, сколько нужно будет доплатить за это время. Иногда после полуночи почасовая
+                                оплата выше.
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFive">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                       <svg
                         width="25"
                         height="25"
@@ -998,33 +857,25 @@
                         мероприятия?
                       </p>
                     </button>
-                  </h2>
-                  <div
-                    id="collapseFive"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      Понадобится: список гостей с именами, указанием возраста и
-                      связи с главными героями праздника, адрес локации, которую
-                      необходимо осмотреть предварительно, расстановка столов,
-                      сцены и танцпола и прочие детали, на основании которых
-                      будет планироваться ваше торжество.
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Понадобится: список гостей с именами, указанием возраста и связи с главными героями праздника, адрес локации, которую необходимо осмотреть предварительно, расстановка столов, сцены и танцпола и прочие детали, на основании которых будет планироваться ваше
+                                торжество.
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-lg-6">
+        </div>
+        <div class="col-lg-6">
             <div class="reviews-right">
-              <h3 class="reviews-right-title">Отзывы моих клиентов:</h3>
-              <div class="reviews-right-img">
-                <img src="images/src/reviews/revi.jpg" alt="" />
-              </div>
-              <div class="reviews-right-bottom">
-                <button class="btn-purple">
+                <h3 class="reviews-right-title">Отзывы моих клиентов:</h3>
+                <div class="reviews-right-img">
+                    <img src="images/src/reviews/revi.jpg" alt="" />
+                </div>
+                <div class="reviews-right-bottom">
+                    <button class="btn-purple">
                   <a
                     target="_blank"
                     href="https://www.instagram.com/emma_romanova/"
@@ -1032,7 +883,7 @@
                   >Смотреть отзывы в <br />
                   моем instagram
                 </button>
-                <button class="btn-yellow">
+                    <button class="btn-yellow">
                   <a
                     target="_blank"
                     href="https://noginsk.gorko.ru/%D1%82%D0%B0%D0%BC%D0%B0%D0%B4%D0%B0/208841/"
@@ -1040,84 +891,55 @@
                   >Смотреть отзывы на <br />
                   Горько.ру
                 </button>
-              </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        </div>
+        </div>
     </section>
 
     <footer id="contactmeLink" class="footer__wrapper">
-      <div class="footer__wrapper-bg">
-        <img src="images/src/footer/footerBg.png" alt="" />
-      </div>
-      <div class="container">
-        <div class="footer row">
-          <div class="col-lg-3 col-md-4 col-6">
-            <a href="#" class="header__logo">
-              <img src="images/src/head/logoHead.png" alt="" />
-            </a>
-          </div>
-          <div class="col-lg-6 col-md-5 footer__contact-items">
-            <a
-              target="_blank"
-              href="https://goo.gl/maps/h5wNQRBtYf7jaw4x9"
-              class="header__contact-item footer__contact-item"
-            >
-              <svg
-                width="14"
-                height="20"
-                viewBox="0 0 14 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+        <div class="footer__wrapper-bg">
+            <img src="images/src/footer/footerBg.png" alt="" />
+        </div>
+        <div class="container">
+            <div class="footer row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="#" class="header__logo">
+                        <img src="images/src/head/logoHead.png" alt="" />
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-5 footer__contact-items">
+                    <a target="_blank" href="https://goo.gl/maps/h5wNQRBtYf7jaw4x9" class="header__contact-item footer__contact-item">
+                        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z"
                   fill="#FFB23E"
                 />
               </svg>
-              <div class="header__contact-item-descp">
-                <h3>Ногинск</h3>
-                <p>и вся Московская область</p>
-              </div>
-            </a>
+                        <div class="header__contact-item-descp">
+                            <h3>Ногинск</h3>
+                            <p>и вся Московская область</p>
+                        </div>
+                    </a>
 
-            <a
-              href="tel:+7 (905) 793-48-91"
-              class="header__contact-item footer__contact-item"
-            >
-              <svg
-                width="19"
-                height="19"
-                viewBox="0 0 19 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                    <a href="tel:+7 (905) 793-48-91" class="header__contact-item footer__contact-item">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M18.7963 14.41C18.089 13.0729 15.6329 11.6232 15.5248 11.5598C15.2092 11.3801 14.8799 11.285 14.5717 11.285C14.1134 11.285 13.7383 11.4949 13.5111 11.8768C13.1518 12.3065 12.7062 12.8088 12.5981 12.8866C11.7612 13.4544 11.1061 13.3899 10.3812 12.6651L6.33546 8.61899C5.61515 7.89868 5.54893 7.23543 6.11285 6.40311C6.19175 6.29427 6.69403 5.84834 7.12375 5.48872C7.39779 5.32564 7.58588 5.0833 7.6683 4.78602C7.77784 4.39046 7.69718 3.92517 7.43864 3.47185C7.37771 3.36759 5.92722 0.911134 4.59086 0.204208C4.34148 0.072122 4.0604 0.00238037 3.77862 0.00238037C3.31438 0.00238037 2.87762 0.183427 2.54934 0.511353L1.65538 1.40496C0.241525 2.81846 -0.270266 4.42076 0.13339 6.16711C0.470122 7.62253 1.45144 9.17128 3.05056 10.7701L8.23011 15.9496C10.254 17.9735 12.1835 18.9999 13.9651 18.9999C13.9651 18.9999 13.9651 18.9999 13.9655 18.9999C15.2758 18.9999 16.4973 18.443 17.5952 17.3451L18.4888 16.4515C19.0319 15.9087 19.1552 15.088 18.7963 14.41Z"
                   fill="#FFB23E"
                 />
               </svg>
-              <div class="header__contact-item-descp">
-                <h3>+7 (905) 793-48-91</h3>
-                <p>Обратный звонок</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-3 col-3">
-            <div class="footer__sochial">
-              <a
-                target="_blank"
-                href="https://vk.com/emma_tamada"
-                class="footer__sochial-item sochialIcon"
-              >
-                <svg
-                  width="47"
-                  height="47"
-                  viewBox="0 0 47 47"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                        <div class="header__contact-item-descp">
+                            <h3>+7 (905) 793-48-91</h3>
+                            <p>Обратный звонок</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-3">
+                    <div class="footer__sochial">
+                        <a target="_blank" href="https://vk.com/emma_tamada" class="footer__sochial-item sochialIcon">
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="23.5" cy="23.5" r="23.5" fill="#FFB23E" />
                   <g clip-path="url(#clip0_38_260)">
                     <path
@@ -1136,19 +958,9 @@
                     </clipPath>
                   </defs>
                 </svg>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/emma_romanova/"
-                class="footer__sochial-item sochialIcon"
-              >
-                <svg
-                  width="47"
-                  height="47"
-                  viewBox="0 0 47 47"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/emma_romanova/" class="footer__sochial-item sochialIcon">
+                            <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="23.5" cy="23.5" r="23.5" fill="#FFB23E" />
                   <path
                     d="M27.3398 14H19.6602C16.5392 14 14 16.5392 14 19.6602V27.3398C14 30.4608 16.5392 33 19.6602 33H27.3398C30.4608 33 33 30.4608 33 27.3398V19.6602C33 16.5392 30.4608 14 27.3398 14ZM31.0886 27.3398C31.0886 29.4102 29.4102 31.0886 27.3398 31.0886H19.6602C17.5898 31.0886 15.9114 29.4102 15.9114 27.3398V19.6602C15.9114 17.5898 17.5898 15.9114 19.6602 15.9114H27.3398C29.4102 15.9114 31.0886 17.5898 31.0886 19.6602V27.3398Z"
@@ -1163,16 +975,15 @@
                     fill="white"
                   />
                 </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="footer-footer">
-              <a href="#">Политика конфидециальности</a>
-              <p>
-                Сайт разработан
-                <a target="_blank" href="https://sector.business/"
-                  >Сектор бизнеса</a
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="footer-footer">
+                        <a href="#">Политика конфидециальности</a>
+                        <p>
+                            Сайт разработан
+                            <a target="_blank" href="https://sector.business/">Сектор бизнеса</a
                 >
               </p>
             </div>
@@ -1237,22 +1048,12 @@
     </div>
     <div class="menuMobile">
       <div class="menuMobile__body">
-        <a href="#">Услуги</a>
-        <a href="#">Обо мне</a>
-        <a href="#">Контакты</a>
-        <div class="menuMobile__body-sochial">
-          <a
-            target="_blank"
-            href="https://vk.com/emma_tamada"
-            class="footer__sochial-item sochialIcon"
-          >
-            <svg
-              width="47"
-              height="47"
-              viewBox="0 0 47 47"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+        <a class="menuMobile-link" href="#services">Услуги</a>
+                            <a class="menuMobile-link" href="#aboutme">Обо мне</a>
+                            <a class="menuMobile-link" href="#contactmeLink">Контакты</a>
+                            <div class="menuMobile__body-sochial">
+                                <a target="_blank" href="https://vk.com/emma_tamada" class="footer__sochial-item sochialIcon">
+                                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="23.5" cy="23.5" r="23.5" fill="#FFB23E" />
               <g clip-path="url(#clip0_38_260)">
                 <path
@@ -1271,19 +1072,9 @@
                 </clipPath>
               </defs>
             </svg>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.instagram.com/emma_romanova/"
-            class="footer__sochial-item sochialIcon"
-          >
-            <svg
-              width="47"
-              height="47"
-              viewBox="0 0 47 47"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/emma_romanova/" class="footer__sochial-item sochialIcon">
+                                    <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="23.5" cy="23.5" r="23.5" fill="#FFB23E" />
               <path
                 d="M27.3398 14H19.6602C16.5392 14 14 16.5392 14 19.6602V27.3398C14 30.4608 16.5392 33 19.6602 33H27.3398C30.4608 33 33 30.4608 33 27.3398V19.6602C33 16.5392 30.4608 14 27.3398 14ZM31.0886 27.3398C31.0886 29.4102 29.4102 31.0886 27.3398 31.0886H19.6602C17.5898 31.0886 15.9114 29.4102 15.9114 27.3398V19.6602C15.9114 17.5898 17.5898 15.9114 19.6602 15.9114H27.3398C29.4102 15.9114 31.0886 17.5898 31.0886 19.6602V27.3398Z"
@@ -1298,23 +1089,20 @@
                 fill="white"
               />
             </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-    <script src="js/phoneInput.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/fslightbox.js"></script>
-    <script src="js/jq.js"></script>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <script src="js/phoneInput.js"></script>
+                <script src="js/scroll.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+                <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+                <script src="js/fslightbox.js"></script>
+                <script src="js/jq.js"></script>
 
-    <script src="js/home.js"></script>
-    <script src="js/bigForm.js"></script>
-  </body>
+                <script src="js/home.js"></script>
+                <script src="js/bigForm.js"></script>
+</body>
+
 </html>
