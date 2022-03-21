@@ -17,6 +17,7 @@
     }
   }
   &-contact {
+    overflow: hidden;
     z-index: 2001;
     position: fixed;
     top: 50%;
@@ -130,6 +131,7 @@ body {
       padding: 30px 20px;
     }
     &-contact {
+      
       width: 90%;
       padding: 30px 20px;
     }
