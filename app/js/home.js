@@ -127,13 +127,18 @@ menuMobileLink.forEach(el => {
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        headerWrapper.classList.remove('hide')
+    if (window.pageYOffset > 150) {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            headerWrapper.classList.remove('hide')
+        } else {
+            headerWrapper.classList.add('hide')
+        }
+        prevScrollpos = currentScrollPos;
     } else {
-        headerWrapper.classList.add('hide')
+        headerWrapper.classList.remove('hide')
     }
-    prevScrollpos = currentScrollPos;
+
 }
 
 
